@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the 8 blood groups, ABO and Rh systems, and check blood donation compatibility.">
+  <title>Blood Groups Information | LifeDrop</title>
+
+  <!-- Favicon (relative path matching exact file extension) -->
+  <link rel="icon" type="image/jpeg" href="../assets/images/logo.jpeg">
+
+  <!-- Google Font matching modern clean template -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- Top Dark-Red Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <a class="top-bar-item" href="tel:+18005550199">
+        <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span>24/7 Helpline: 1800-555-0199</span>
+      </a>
+      <a class="top-bar-item" href="mailto:support@lifedrop.org">
+        <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
+        <span>support@lifedrop.org</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sticky White Navbar -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="../index.html">
+        <span class="logo-badge">
+          <img
+            src="../assets/images/logo.jpeg"
+            alt="LifeDrop logo"
+            width="44"
+            height="44"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+          >
+          <span class="logo-fallback" aria-hidden="true">🩸</span>
+        </span>
+        <span>Life<span class="brand-accent">Drop</span></span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        id="navToggle"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Toggle navigation menu"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
+      <nav class="nav-menu" id="primaryNav" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link" href="../pages/donate.html">Donate</a></li>
+          <li><a class="nav-link" href="../pages/find-donor.html">Find Blood</a></li>
+          <li><a class="nav-link" href="../pages/blood-requests.html">Requests</a></li>
+          <li><a class="nav-link active" href="../pages/why-donate.html" aria-current="page">Learn</a></li>
+          <li><a class="nav-link" href="../pages/success-stories.html">Stories</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. Hero Section -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="../index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Blood Groups Information</span>
+          </nav>
+          <h1 class="hero-title">BLOOD GROUPS INFORMATION</h1>
+          <p class="hero-tagline">Know your type. Know who you can help.</p>
+        </div>
+
+        <aside class="hero-glass-card" aria-label="Key compatibility summary">
+          <span class="hero-glass-label">Quick Reference</span>
+          <p class="hero-glass-text">Universal donor: O- | Universal recipient: AB+</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 2. Understanding Blood Groups -->
+    <section class="section" aria-labelledby="understanding-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Blood Basics</span>
+          <h2 class="section-title" id="understanding-heading">Understanding Blood Groups</h2>
+          <p class="section-subtitle">
+            Every person's blood belongs to a specific type based on markers on the surface of red blood cells.
+            Together, the ABO system and the Rh factor define the 8 major blood groups used for safe transfusions.
+          </p>
+        </div>
+
+        <div class="understanding-grid">
+          <article class="card info-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+              </svg>
+            </div>
+            <h3>ABO System</h3>
+            <p>
+              The ABO system groups blood into four main types: <strong>A</strong>, <strong>B</strong>,
+              <strong>AB</strong>, and <strong>O</strong>. Type A has A markers, Type B has B markers,
+              Type AB has both, and Type O has neither—determining which blood types can safely mix.
+            </p>
+          </article>
+
+          <article class="card info-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M12 8v8M8 12h8"/>
+              </svg>
+            </div>
+            <h3>Rh Factor</h3>
+            <p>
+              The Rh factor is a protein on red blood cells. If you have it, your blood is
+              <strong>Rh-positive (+)</strong>; if you do not, it is <strong>Rh-negative (-)</strong>.
+              Rh-negative blood can be safely given to both positive and negative recipients of compatible ABO types.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. The 8 Blood Groups -->
+    <section class="section section-alt" aria-labelledby="groups-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">All 8 Types</span>
+          <h2 class="section-title" id="groups-heading">The 8 Blood Groups</h2>
+          <p class="section-subtitle">
+            Select any blood group card below to highlight it and jump straight to the interactive compatibility checker.
+          </p>
+        </div>
+
+        <!-- Populated dynamically from js/blood-groups.js -->
+        <div class="blood-groups-grid" id="bloodGroupsGrid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Interactive Compatibility Checker -->
+    <section class="section" id="compatibility-checker" aria-labelledby="checker-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Interactive Tool</span>
+          <h2 class="section-title" id="checker-heading">Compatibility Checker</h2>
+          <p class="section-subtitle">
+            Choose your blood group and select whether you want to know who you can donate to or receive from.
+          </p>
+        </div>
+
+        <div class="card checker-card reveal-card">
+          <form class="checker-form" id="compatibilityForm" novalidate>
+            <div class="form-field">
+              <label for="bloodGroupSelect">I am (blood group)</label>
+              <select class="form-select" id="bloodGroupSelect" name="bloodGroup">
+                <option value="">Select blood group</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="directionSelect">I want to know</label>
+              <select class="form-select" id="directionSelect" name="direction">
+                <option value="donate">Who can I donate to?</option>
+                <option value="receive">Who can I receive from?</option>
+              </select>
+            </div>
+
+            <div class="checker-actions">
+              <button type="submit" class="btn btn-primary" id="checkBtn">Check</button>
+              <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+            </div>
+          </form>
+
+          <div class="checker-result" id="checkerResult" aria-live="polite">
+            <p class="checker-result-message">Select a blood group above and click <strong>Check</strong> to view compatible types.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Compatibility Chart -->
+    <section class="section section-alt" aria-labelledby="chart-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Full Matrix</span>
+          <h2 class="section-title" id="chart-heading">Compatibility Chart</h2>
+          <p class="section-subtitle">
+            Donors are listed in rows and recipients in columns. Scroll horizontally on smaller screens to view the entire matrix.
+          </p>
+        </div>
+
+        <div class="chart-legend">
+          <span class="legend-item">
+            <span class="cell-check" aria-hidden="true">✓</span>
+            <span>Compatible</span>
+          </span>
+          <span class="legend-item">
+            <span class="cell-dash" aria-hidden="true">—</span>
+            <span>Not compatible</span>
+          </span>
+        </div>
+
+        <div class="chart-scroll" role="region" aria-label="Blood group compatibility matrix" tabindex="0">
+          <!-- Built dynamically from js/blood-groups.js -->
+          <table class="compatibility-table" id="compatibilityTable"></table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Quick Facts -->
+    <section class="section" aria-labelledby="facts-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Good to Know</span>
+          <h2 class="section-title" id="facts-heading">Quick Facts</h2>
+          <p class="section-subtitle">
+            Essential takeaways about blood group compatibility and emergency preparedness.
+          </p>
+        </div>
+
+        <div class="facts-grid">
+          <article class="card fact-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>O- in Emergencies</h3>
+            <p>O-negative red blood cells lack A, B, and Rh markers, so O- can be given to anyone in urgent emergencies.</p>
+          </article>
+
+          <article class="card fact-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <h3>AB+ Universal Recipient</h3>
+            <p>People with AB-positive blood can safely receive red blood cells from any of the eight blood groups.</p>
+          </article>
+
+          <article class="card fact-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Safe Transfusion Matching</h3>
+            <p>Matching blood type matters for safe transfusion so the recipient's immune system accepts the donated blood.</p>
+          </article>
+
+          <article class="card fact-card reveal-card">
+            <div class="icon-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="8" x2="12" y2="12"/>
+                <line x1="12" y1="16" x2="12.01" y2="16"/>
+              </svg>
+            </div>
+            <h3>Preparedness Matters</h3>
+            <p>Knowing your blood group helps doctors act faster and lets you step forward quickly when matching blood is needed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Red Call-To-Action Band -->
+    <section class="cta-band" aria-label="Call to action">
+      <div class="container cta-band-inner">
+        <h2 class="cta-band-title">Know your blood group? Become a donor today.</h2>
+        <div class="cta-band-actions">
+          <a class="btn btn-light" href="../pages/donate.html">Become a Donor</a>
+          <a class="btn btn-outline-light" href="../pages/myths-facts.html">Myths and Facts</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../index.html">
+            <span class="logo-badge">
+              <img
+                src="../assets/images/logo.jpeg"
+                alt="LifeDrop logo"
+                width="44"
+                height="44"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';"
+              >
+              <span class="logo-fallback" aria-hidden="true">🩸</span>
+            </span>
+            <span>LifeDrop</span>
+          </a>
+          <p class="footer-about">
+            Connecting voluntary blood donors, patients, and communities with clear awareness and reliable compatibility information.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/donate.html">Donate</a></li>
+            <li><a href="../pages/find-donor.html">Find Blood</a></li>
+            <li><a href="../pages/why-donate.html">Why Donate Blood?</a></li>
+            <li><a href="../pages/blood-groups.html">Blood Groups Information</a></li>
+            <li><a href="../pages/myths-facts.html">Myths and Facts</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contact &amp; Helpline</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <a href="tel:+18005550199">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>1800-555-0199</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:support@lifedrop.org">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                <span>support@lifedrop.org</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 LifeDrop</span>
+        <span>Blood Donation Awareness Initiative</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Script -->
+  <script src="../js/blood-groups.js"></script>
+</body>
+</html>
